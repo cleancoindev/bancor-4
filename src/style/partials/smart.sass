@@ -1,0 +1,276 @@
+// Smart header
+
+.smart_header
+  padding: 260px 0 40px 0
+  position: relative
+  .container
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &:before
+    position: absolute
+    content: ''
+    top: 0
+    clip-path: polygon(0 100%,100% 5%,100% 0,0 0)
+    background-color: $color_green
+    width: 100%
+    height: 255px
+    z-index: 0
+  &:after
+    position: absolute
+    content: ''
+    bottom: -1px
+    clip-path: polygon(0 100%,100% 100%,100% 0,0 99%)
+    background-color: #fff
+    width: 100%
+    height: 245px
+    z-index: 0
+    
+.smart_header_item
+  width: 485px
+  max-width: 100%
+  &:nth-child(2)
+    position: relative
+    top: -40px
+    z-index: 1
+  &__page
+    margin-bottom: 17px
+    .title
+      color: #9b9b9b
+  &__title
+    width: 350px
+    max-width: 100%
+    margin-bottom: 40px
+    .title
+      color: $color_green
+  &__text
+    margin-bottom: 60px
+  &__btn
+    margin-bottom: 30px
+    a
+      min-width: 250px
+
+// Smart advantage
+
+.smart_advantage
+  padding: 40px 0 80px 0
+  margin-top: 0
+  background-color: #fff
+  .four_items__wrapper
+    width: 1000px
+  .four_items__title
+    .title
+      color: $color_green
+  .four_items__text
+    width: 940px
+  .four_items_item__icon img
+    width: 40px
+
+// Smart how
+
+.smart_how
+  background-color: $color_green
+  padding: 80px 0
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    bottom: 0
+    clip-path: polygon(0 100%,100% 100%,100% 0,0 100%)
+    background-color: #0dbf75
+    width: 100%
+    height: 245px
+    z-index: 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    position: relative
+    z-index: 1
+
+.smart_how_item
+  &:first-child
+    width: 500px
+    max-width: 100%
+  &:nth-child(2)
+    width: 550px
+  &__title
+    margin-bottom: 55px
+    .title
+      color: #ffffff
+  &__text
+    margin-bottom: 48px
+    p
+      color: #ffffff
+  &__btn
+    a
+      min-width: 250px
+  &__list
+    display: flex
+    align-items: center
+    padding-bottom: 30px
+    border-bottom: solid 1px #ffffff
+    margin-bottom: 23px
+
+.smart_how_list
+  &:last-child
+    border-bottom: 0
+    margin-bottom: 0
+    padding-bottom: 0
+  &__icon
+    margin-right: 30px
+    img
+      width: 45px
+  &__text
+    width: 430px
+    max-width: 100%
+    p
+      font-size: 17px
+      font-weight: 600
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.41
+      letter-spacing: 0.5px
+      color: #ffffff
+
+// Smart token
+
+.smart_token
+  background-color: #fff
+  padding: 85px 0 30px 0
+  &__title
+    width: 685px
+    max-width: 100%
+    margin: 0 auto 40px auto
+    .title
+      text-align: center
+      color: $color_green
+  &__text
+    width: 940px
+    max-width: 100%
+    margin: 0 auto 30px auto
+    p
+      text-align: center
+  &__img
+    text-align: center
+
+// Smart design
+
+.smart_design
+  background-color: #f5f5fa
+  padding: 100px 0 10px 0
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 100px
+    .title
+      width: 540px
+      max-width: 100%
+      text-align: right
+      color: #4a4a4a
+    p
+      width: 540px
+      max-width: 100%
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.smart_design_item
+  width: 535px
+  max-width: 100%
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.3)
+  background-color: #fff
+  transition: 0.5s
+  margin-bottom: 95px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 28px 0
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      height: 57%
+      width: 100%
+      bottom: -1px
+      clip-path: polygon(0 100%,100% 100%,100% 0,0 100%)
+      background-color: rgba(255, 255, 255, 0.25)
+  &:first-child
+    .smart_design_item__icon
+      background-color: #48d9ff
+    .smart_design_item__text
+      .title
+        color: #48d9ff
+  &:nth-child(2)
+    .smart_design_item__icon
+      background-color: $color_orange
+    .smart_design_item__text
+      .title
+        color: $color_orange
+  &:nth-child(3)
+    .smart_design_item__icon
+      background-color: #ffb300
+    .smart_design_item__text
+      .title
+        color: #ffb300
+  &:nth-child(4)
+    .smart_design_item__icon
+      background-color: #6d6df6
+    .smart_design_item__text
+      .title
+        color: #6d6df6
+  &__text
+    padding: 5px 60px 20px 45px
+    .title
+      margin-bottom: 2px
+      font-size: 17px
+      font-weight: 800
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.65
+      letter-spacing: normal
+      text-transform: uppercase
+    p
+      font-size: 14px
+      font-weight: 400
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.5
+      letter-spacing: normal
+      color: #737373
+
+.smart_add
+  background-repeat: no-repeat
+  background-position: bottom
+  background-size: cover
+  padding: 100px 0
+  background-image: none!important
+  position: relative
+  .container
+    position: relative
+    z-index: 1
+  &__bg
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    z-index: 0
+  &__title
+    width: 500px
+    max-width: 100%
+    margin: 0 auto 30px auto
+    .title
+      text-align: center
+      color: #ffffff
+  &__text
+    margin-bottom: 50px
+    p
+      text-align: center
+      color: #ffffff
+  &__btn
+    text-align: center
+    a
+      color: $color_green
+      min-width: 250px
+      height: 55px

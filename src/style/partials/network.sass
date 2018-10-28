@@ -1,0 +1,364 @@
+// Network
+
+.network_header
+  background-color: #f5f5fa
+  &:before
+    position: absolute
+    content: ''
+    top: 0
+    clip-path: polygon(0 100%,100% 5%,100% 0,0 0)
+    background-color: $color_blue
+    width: 100%
+    height: 255px
+    z-index: 0
+  &__img
+    z-index: 1
+    position: relative
+    margin-bottom: 48px
+    text-align: center
+  &__page
+    margin-bottom: 15px
+    .title
+      text-align: center
+      color: $color_blue
+  &__title
+    margin-bottom: 5px
+    .title
+      text-align: center
+      color: $color_blue
+  &__text
+    margin-bottom: 60px
+    p
+      text-align: center
+      color: $color_blue
+  &__btn
+    text-align: center
+    a
+      min-width: 250px
+
+// Network info
+
+.network_info
+  background-color: #fff
+  margin-top: -55px
+  clip-path: polygon(0% 100%,100% 69%,100% 0%,0% 31%)
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  flex-wrap: wrap
+  position: relative
+  z-index: 1
+  &__left
+    background-color: #fff
+    width: 50%
+  &__right
+    background-color: rgba(70, 160, 255, 0.21)
+    width: 50%
+    
+.network_numbers
+  padding-top: 260px
+  height: 735px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex-direction: column
+  &__item
+    margin-bottom: 33px
+    .title
+      font-size: 16px
+      font-weight: 800
+      line-height: 1.33
+      letter-spacing: 4.5px
+      text-align: center
+      color: $color_blue
+      text-transform: uppercase
+    p
+      font-family: $lato
+      font-size: 55px
+      font-weight: 300
+      line-height: normal
+      letter-spacing: 10px
+      text-align: center
+      color: #4a4a4a
+
+.network_liquidity
+  padding-top: 195px
+  height: 735px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex-direction: column
+  .title
+    font-size: 35px
+    font-weight: 800
+    line-height: 1.14
+    letter-spacing: 1.7px
+    text-align: center
+    color: $color_blue
+    margin-bottom: 23px
+    text-transform: uppercase
+  &__pseudo
+    width: 236px
+    max-width: 100%
+    margin-bottom: 6px
+  &__noun
+    font-size: 17px
+    font-weight: 600
+    line-height: 2.35
+    letter-spacing: 0.8px
+    text-align: center
+    color: $color_blue
+    margin-bottom: 62px
+  p
+    width: 450px
+    max-width: 100%
+    margin: 0 auto
+    font-size: 24px
+    font-weight: 400
+    line-height: 1.46
+    letter-spacing: normal
+    text-align: center
+    color: $color_blue
+
+// Network effect
+
+.four_items_network
+  background-image: none!important
+
+.four_items
+  position: relative
+  z-index: 0
+  background-size: cover
+  background-position: bottom
+  padding: 220px 0 60px 0
+  margin-top: -245px
+  &__bg
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    z-index: 0
+  .container
+    z-index: 1
+    position: relative
+  &__title
+    margin-bottom: 40px
+    .title
+      text-align: center
+      color: #737373
+  &__text
+    width: 817px
+    max-width: 100%
+    margin: 0 auto 80px auto
+    p
+      text-align: center
+  &__wrapper
+    width: 1000px
+    max-width: 100%
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.four_items_item
+  display: flex
+  align-items: flex-start
+  width: 48%
+  max-width: 100%
+  margin-bottom: 40px
+  &__icon
+    margin-right: 16px
+    img
+      height: auto
+  .title
+    font-size: 20px
+    font-weight: 600
+    line-height: 1.4
+    letter-spacing: 0.8px
+    color: #737373
+    margin-bottom: 5px
+  p
+    width: 390px
+    max-width: 100%
+    font-size: 17px
+    font-weight: 400
+    line-height: 1.41
+    color: #9b9b9b
+  a
+    margin-top: 23px
+    display: flex
+    align-items: center
+    font-size: 14px
+    font-weight: 800
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: 0.6px
+    color: #46a0ff
+    text-transform: uppercase
+    transition: 0.5s
+    i
+      margin-left: 5px
+      position: relative
+      right: 0
+      transition: 0.5s
+    &:hover
+      transition: 0.5s
+      i
+        transition: 0.5s
+        right: -10px
+
+
+// Convert
+
+.network_convert
+  padding: 100px 0 110px 0
+  position: relative
+  background-color: $color_blue
+  //&:before
+  //  position: absolute
+  //  content: ''
+  //  bottom: 0
+  //  clip-path: polygon(0 100%,100% 100%,100% 0,0 100%)
+  //  background-color: $color_blue
+  //  width: 100%
+  //  height: 185px
+  &__title
+    margin-bottom: 10px
+    .title
+      text-align: center
+      color: #fff
+  &__text
+    margin-bottom: 70px
+    p
+      text-align: center
+      color: #fff
+
+.convert_slider
+  position: relative
+  display: flex
+  justify-content: space-between
+
+.convert_slider_item
+  text-align: center
+  &__img
+    width: 110px
+    height: 110px
+    margin: 0 auto 25px auto
+    border-radius: 50%
+    background-color: #fff
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: 0.5s
+    img
+      position: absolute
+      transition: 0.5s
+      &:nth-child(2)
+        transition: 0.5s
+        opacity: 0
+    //&:hover
+    //  transition: 0.5s
+    //  img
+    //    &:first-child
+    //      opacity: 0
+    //    &:nth-child(2)
+    //      opacity: 1
+  &__title
+    width: 120px
+    max-width: 100%
+    .title
+      font-size: 14px
+      font-weight: 800
+      line-height: 1.41
+      letter-spacing: 0.5px
+      text-align: center
+      color: #fff
+      text-transform: uppercase
+
+// Network join
+
+.fundamentals
+  padding: 80px 0 100px 0
+  position: relative
+  background-color: #f5f5fa
+  &:before
+    position: absolute
+    content: ''
+    bottom: 0
+    clip-path: polygon(0 100%,100% 100%,100% 5%,0 75%)
+    background-color: #ececf0
+    width: 100%
+    height: 390px
+    z-index: 0
+  &__title
+    width: 100%
+    border-bottom: 0.7px solid #9b9b9b
+    padding-bottom: 6px
+    margin-bottom: 80px
+    .title
+      color: #4a4a4a
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    z-index: 1
+    position: relative
+
+.fundamentals_item
+  overflow: hidden
+  display: flex
+  align-items: center
+  padding: 53px 54px 56px 0
+  width: 544px
+  max-width: 100%
+  border-radius: 1.9px
+  background-color: #ffffff
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3)
+  transition: 0.5s
+  &:hover
+    transition: 0.5s
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12)
+    .fundamentals_info__title .title
+      i
+        transition: 0.5s
+        right: -10px
+  &:first-child
+    border-top: 4px solid #48d9ff
+    .title
+      color: #48d9ff
+  &:nth-child(2)
+    border-top: 4px solid $color_orange
+    .title
+      color: $color_orange
+  &__img
+    margin-right: 54px
+    width: 112px
+    position: relative
+    margin-left: -25px
+    img
+      width: 100%
+
+.fundamentals_info
+  &__title
+    margin-bottom: 17px
+    .title
+      font-size: 17px
+      font-weight: 800
+      letter-spacing: 0.2px
+      text-transform: uppercase
+    i
+      margin-left: 5px
+      right: 0
+      position: relative
+      transition: 0.5s
+  &__text
+    width: 325px
+    max-width: 100%
+    p
+      font-size: 14px
+      font-weight: 400
+      line-height: 1.57
+      letter-spacing: 0.5px
+      color: #737373

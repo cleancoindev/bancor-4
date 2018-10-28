@@ -1,0 +1,41 @@
+{
+  "name": "habr",
+  "description": "",
+  "main": "",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize-css": "normalize.css#^7.0.0",
+    "swiper": "^4.4.1",
+    "components-font-awesome": "^5.0.6",
+    "bower": "*",
+    "install": "^1.0.4",
+    "semantic": "semantic-ui#^2.4.1",
+    "gsap": "^2.0.2",
+    "scrollmagic": "^2.0.6"
+  },
+  "overrides": {
+    "gsap": {
+      "main": [
+        "./src/uncompressed/TweenMax.js",
+        "./src/uncompressed/plugins/ScrollToPlugin.js"
+      ]
+    },
+    "scrollmagic": {
+      "main": [
+        "./scrollmagic/uncompressed/ScrollMagic.js",
+        "./scrollmagic/uncompressed/plugins/animation.gsap.js",
+        "./scrollmagic/uncompressed/plugins/debug.addIndicators.js"
+      ]
+    }
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

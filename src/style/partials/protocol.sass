@@ -1,0 +1,255 @@
+// Protocol header
+
+.protocol_header
+  padding: 260px 0 120px 0
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    top: 0
+    clip-path: polygon(0 100%,100% 5%,100% 0,0 0)
+    background-color: $color_yellow
+    width: 100%
+    height: 255px
+    z-index: 0
+  &:after
+    position: absolute
+    content: ''
+    bottom: -1px
+    clip-path: polygon(0 100%,100% 100%,100% 0,0 99%)
+    background-color: #fff
+    width: 100%
+    height: 245px
+    z-index: 0
+    
+.protocol_header_item
+  width: 495px
+  max-width: 100%
+  &__page
+    margin-bottom: 15px
+    .title
+      color: #737373
+  &__title
+    margin-bottom: 40px
+    .title
+      color: #ffb300
+  &__text
+    margin-bottom: 40px
+    p
+      color: #9b9b9b
+  &__btn
+    a
+      min-width: 250px
+
+// Protocol chain
+
+.protocol_chain
+  background-color: #fff
+  padding: 55px 0 40px 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    .title
+      width: 453px
+      max-width: 100%
+      text-align: right
+      color: #4a4a4a
+    p
+      width: 552px
+      max-width: 100%
+
+.protocol_source
+  background-color: #fff
+  padding-bottom: 50px
+  &__btn
+    display: flex
+    justify-content: center
+    a
+      min-width: 250px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    background-color: #fff
+    flex-wrap: wrap
+    position: relative
+    z-index: 1
+    clip-path: polygon(0 100%,100% 69%,100% 0,0 31%)
+  &__img
+    background-image: url("../img/bg_part_1.png")
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 100px 0 0 0
+    width: 50%
+    height: 735px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    img
+      width: 260px
+      margin-bottom: 30px
+  &__info
+    background-color: $color_yellow
+    padding-top: 165px
+    width: 50%
+    height: 735px
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    flex-direction: column
+    .title
+      width: 535px
+      max-width: 100%
+      margin: 0 auto 30px auto
+      color: #ffffff
+    p
+      width: 535px
+      max-width: 100%
+      margin: 0 auto
+      letter-spacing: -0.1px
+      color: #ffffff
+
+// Protocol innovation
+
+.protocol_innovation
+  padding: 10px 0 90px 0
+  background-color: #fff
+  &__title
+    width: 650px
+    max-width: 100%
+    margin: 0 auto 40px auto
+    .title
+      text-align: center
+      color: #4a4a4a
+  &__text
+    margin-bottom: 20px
+    p
+      text-align: center
+  &__bottom
+    width: 60%
+    margin: 0 auto
+    svg
+      &:nth-child(2)
+        display: none
+  &__formule
+    font-size: 24px
+    font-weight: 600
+    font-style: normal
+    font-stretch: normal
+    line-height: 2.29
+    letter-spacing: normal
+    text-align: center
+    color: $color_blue
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 60px
+  &__btn
+    text-align: center
+    a
+      min-width: 250px
+
+
+.protocol_formule
+  &__division
+    width: 585px
+    max-width: 100%
+    display: flex
+    flex-direction: column
+    margin: 3px 0 0 10px
+    span
+      border-bottom: solid 2px $color_blue
+      &:nth-child(2)
+        border-bottom: 0
+
+// Protocol fundamental
+
+.protocol_fundamentals
+  .fundamentals_item
+    &:first-child
+      border-top: 4px solid $color_blue
+      .title
+        color: $color_blue
+  .fundamentals_item
+    &:nth-child(2)
+      border-top: 4px solid $color_green
+      .title
+        color: $color_green
+
+// Protocol slider
+
+.protocol_community
+  padding: 0 0 100px 0
+  position: relative
+  &__bg
+    width: 100%!important
+    height: 100%!important
+    position: absolute!important
+    top: 0
+    left: 0
+    .swiper-slide
+      background-size: cover
+      background-repeat: no-repeat
+  .container
+    position: relative
+    .swiper-button-next,
+    .swiper-button-prev
+      background-image: none
+      outline: 0
+      top: -152px
+      img
+        height: 32px
+    .swiper-button-next
+      text-align: right
+      right: -100px
+    .swiper-button-prev
+      left: -100px
+  &__title
+    position: relative
+    z-index: 1
+    background-color: #ffb300
+    margin-bottom: 80px
+    padding: 60px 0
+    .protocol_slider
+      width: 100%
+    .title
+      font-size: 18px
+      font-weight: 600
+      color: #ffffff
+      border-bottom: solid 0.7px #fff
+      padding-bottom: 6px
+      
+.protocol_slider
+  width: 90%
+  margin: 0 auto
+  overflow-x: hidden
+  &__item
+    text-align: left
+    width: 755px
+    max-width: 100%
+    margin: 0 auto
+    .title
+      margin-bottom: 5px
+      color: #fff
+    p
+      color: #fff
+      margin-bottom: 40px
+    a
+      min-width: 250px
+      color: #fff
+      font-weight: 700
+      text-transform: uppercase
+      transition: 0.5s
+      &:hover
+        transition: 0.5s
+        color: $color_blue
+        i
+          color: $color_blue
+          transition: 0.5s
+          right: -10px
+      i
+        color: #fff
+        transition: 0.5s
+        margin-left: 10px
+        position: relative
+        right: 0

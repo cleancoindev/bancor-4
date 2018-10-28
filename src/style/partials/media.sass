@@ -1,0 +1,1712 @@
+$r-768: 768px
+$r-992: 992px
+$r-1024: 1024px
+$r-1200: 1200px
+$r-1400: 1400px
+$r-1800: 1800px
+
+body
+  // break max-768
+  @media only screen and (max-width: $r-768)
+    .container
+      padding: 0 15px
+    .show_desctop
+      display: none
+    .show_mobile
+      display: block
+    .container
+      margin: 0 auto
+    .swiper-container
+      height: 45vh
+      overflow: hidden
+      .swiper-slide
+        width: 100%
+      .swiper-button-prev
+        display: none
+      .swiper-button-next
+        bottom: 0
+        right: 47%
+        top: inherit
+        transform: rotate(90deg)
+
+    // Header
+
+    .header_wrap
+      padding-top: 36px
+      &__logo
+        img
+          width: 110px
+
+    // Network
+
+    .network_header
+      padding: 150px 0 130px 0
+      margin-top: -104px
+      &:before
+        clip-path: polygon(0% 100%,100% 61%,100% 0%,0% 0%)
+        height: 135px
+      &__img
+        width: 768px
+        position: absolute
+        z-index: 1
+        left: -340px
+        height: 150px
+      &__page
+        margin-bottom: 3px
+        .title
+          color: #9b9b9b
+          font-size: 15px
+          text-align: left
+      &__title
+        margin-bottom: 21px
+        .title
+          text-align: left
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        margin-bottom: 40px
+        p
+          text-align: left
+          color: #9b9b9b
+          font-size: 16px
+          line-height: 1.6
+      &__btn
+        text-align: left
+        margin-bottom: 50px
+        a
+          min-width: 155px
+          height: 34px
+          font-size: 13px
+    .network_info
+      z-index: 0
+      flex-wrap: wrap
+      clip-path: polygon(0 100%,100% 90%,100% 0,0 10%)
+      &__left
+        width: 100%
+        order: 2
+      &__right
+        width: 100%
+        order: 1
+    .network_liquidity
+      height: auto
+      padding: 115px 0
+      clip-path: polygon(0 100%,100% 80%,100% 0,0 0)
+      .title
+        font-size: 27px
+        font-weight: 600
+        margin-bottom: 16px
+        line-height: 1.3
+      img
+        width: 235px
+        margin-bottom: 10px
+      &__noun
+        margin-bottom: 20px
+      p
+        width: 305px
+        max-width: 100%
+        font-size: 16px
+        line-height: 1.6
+    .network_numbers
+      height: auto
+      padding: 30px 0 80px 0
+      &__item
+        margin-bottom: 40px
+        .title
+          text-transform: uppercase
+          margin-bottom: 19px
+          font-size: 18px
+          font-weight: 500
+        p
+          font-size: 30px
+          font-weight: 500
+    .four_items_network
+      background-image: url("../img/bg_effect.png") !important
+    .four_items
+      background-position: top
+      margin-top: -240px
+      padding: 270px 0 40px 0
+      &__bg
+        display: none
+      &__title
+        margin-bottom: 25px
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        p
+          font-size: 16px
+          line-height: 1.6
+          text-align: left
+    .wallet_simple
+      .four_items_item__icon
+        background-color: rgba(109, 109, 246, 0.31)
+    .four_items__text
+      margin-bottom: 20px
+    .four_items_item__icon
+      width: 54px
+      height: 54px
+      background-color: rgba(70, 160, 255, 0.3)
+      margin: 0 auto 15px auto
+      border-radius: 50%
+      align-items: center
+      display: flex
+      justify-content: center
+      span
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        width: 54px
+        height: 54px
+        border-radius: 50%
+        background-color: rgba(70, 160, 255, 0.3)
+    .four_items_wrap
+      flex-wrap: wrap
+      &__item
+        flex-wrap: wrap
+        width: 100%
+        .title
+          margin-bottom: 10px
+          color: $color_blue
+          font-size: 18px
+          font-weight: 600
+          line-height: 1.3
+          text-align: center
+        p
+          width: 100%
+          font-size: 16px
+          font-weight: 500
+          line-height: 1.6
+          text-align: left
+    .convert_slider
+      flex-wrap: wrap
+      &_item
+        margin-bottom: 80px
+        width: 50%
+        &:nth-last-child(-n+2)
+          margin-bottom: 40px
+    .convert_slider_item__title
+      margin: 0 auto
+    .network_convert
+      padding: 40px 0 0 0
+      &:before
+        clip-path: polygon(0 100%,100% 100%,100% 40%,0 78%)
+    .network_convert
+      &__title
+        margin-bottom: 21px
+        .title
+          font-size: 30px
+      &__text
+        width: 225px
+        max-width: 100%
+        margin: 0 auto 35px auto
+        p
+          font-size: 16px
+          line-height: 1.6
+          font-weight: 500
+    .convert_slider_item
+      &__img
+        width: 55px
+        height: 55px
+        margin-bottom: 20px
+        img
+          width: 25px
+    .fundamentals
+      background-color: #f5f5fa
+      padding: 40px 0
+      &__title
+        margin-bottom: 30px
+        .title
+          color: #9b9b9b
+          font-size: 15px
+          font-weight: 500
+    .fundamentals_item
+      border-radius: 1.9px
+      box-shadow: 0 10px 10px 0 rgba(0,0,0,.3)
+      margin: 0 auto 30px auto
+      padding: 25px 0 32px 0
+      &:hover
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12)
+      &__img
+        padding: 0
+        width: 87px
+        margin: 0 20px 0 -15px
+        display: flex
+        align-items: center
+        justify-content: center
+      &__info
+        width: 245px
+        max-width: 100%
+        padding: 0
+    .fundamentals_info
+      &__title
+        margin-bottom: 8px
+      &__text
+        width: 100%
+        p
+          font-size: 16px
+          line-height: 1.6
+
+    // Footer
+
+    .footer
+      padding: 37px 0 77px 0
+    .footer_item
+      &:first-child,
+      &:nth-child(2)
+        width: 100%
+        padding-top: 0
+      &__nav
+        ul
+          padding: 0
+      &__text
+        p
+          font-size: 24px
+          font-weight: 600
+          color: $color_blue
+          span
+            text-transform: uppercase
+            display: block
+            font-size: 15px
+            font-weight: 500
+            color: #9b9b9b
+            margin-bottom: 2px
+      form
+        margin-bottom: 94px
+        span
+          width: 100%
+        input[type="email"]
+          width: 100%
+          height: 52px
+          border-radius: 7px
+          background-color: #f5f5fa
+          border: 0
+          font-size: 13px
+          font-weight: normal
+          line-height: 1.85
+          letter-spacing: 0.8px
+          color: #9b9b9b
+          margin: 0 0 21px 0
+          &::placeholder
+            font-size: 13px
+            font-weight: normal
+            line-height: 1.85
+            letter-spacing: 0.8px
+            color: #9b9b9b
+        input[type="submit"]
+          width: 100%
+          height: 52px
+          border-radius: 6px
+          background-color: $color_blue
+          font-size: 13px
+          text-transform: uppercase
+          box-shadow: 0 7px 7px 0 rgba(0,0,0,.15), 0 0 8px 0 rgba(0,0,0,.12)
+          &:hover
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 0 8px 0 rgba(0, 0, 0, 0.12)
+      &__price
+        font-size: 22px
+        font-weight: 900
+        letter-spacing: 1.4px
+        text-align: center
+        border-top: solid 0.8px #9b9b9b
+        border-bottom: solid 2.8px #9b9b9b
+      &__nav
+        margin-bottom: 50px
+        ul
+          li
+            width: 47%
+      &__socials
+        margin-bottom: 40px
+        .textwidget
+          display: flex
+          justify-content: center
+          flex-wrap: wrap
+        li
+          width: 25%
+          display: flex
+          justify-content: center
+          margin-bottom: 18px
+          a
+            width: 45px
+            height: 45px
+    // Wallets
+
+    .wallet_header
+      margin-top: -104px
+      padding: 150px 0 80px 0
+      &:before
+        clip-path: polygon(0 100%,100% 61%,100% 0,0 0)
+        height: 135px
+      &:after
+        height: 75px
+      &_wrap__item:nth-child(2)
+        right: -74px
+        width: 235px
+        bottom: -100px
+      &_item__page
+        margin-bottom: 3px
+        .title
+          font-size: 15px
+      &_item__title
+        margin-bottom: 24px
+        .title
+          font-size: 30px
+      &_item__text
+        p
+          font-size: 16px
+          line-height: 1.6
+      &_item__btn
+        a
+          font-size: 13px
+          height: 34px
+          width: 155px
+
+    .wallet_simple
+      margin-top: 0
+      padding: 30px 0 60px 0
+      .four_items_item__info
+        width: 100%
+      .four_items_item .title
+        color: #6d6df6
+
+    .four_items_item__info
+      width: 100%
+    .wallet_crypto_item
+      &:nth-child(2)
+        position: absolute
+        right: -72px
+        top: -100px
+        transform: rotate(10deg)
+        width: 253px
+
+    .wallet_crypto
+      padding: 155px 0 65px 0
+      &:before
+        top: 0
+        clip-path: polygon(0 100%,100% 0,100% 0,0 0)
+        height: 75px
+        background-color: #fff
+      &:after
+        position: absolute
+        content: ''
+        bottom: 0
+        clip-path: polygon(0 100%,100% 100%,100% 0,0 99%)
+        height: 75px
+        width: 100%
+        background-color: #fff
+      &__img
+        width: 255px
+        max-width: 100%
+        position: absolute
+        right: -60px
+        top: 60px
+        transform: rotate(10deg)
+
+    .wallet_crypto_item
+      &__title
+        width: 220px
+        max-width: 100%
+        margin-bottom: 24px
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        width: 250px
+        max-width: 100%
+        margin-bottom: 40px
+        p
+          font-size: 16px
+          line-height: 1.6
+      &__btn
+        a
+          min-width: 155px
+          height: 34px
+          font-size: 13px
+    .wallet_hundreds
+      padding: 30px 0 40px 0
+      &__title
+        margin-bottom: 23px
+        .title
+          font-size: 30px
+          text-align: left
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        margin-bottom: 30px
+        p
+          font-size: 16px
+          line-height: 1.6
+          text-align: left
+      &__btn
+        justify-content: flex-start
+        a
+          font-size: 15px
+
+    // Contact
+
+    .contact_header
+      margin-top: -104px
+      padding: 150px 0 80px 0
+      &:before
+        clip-path: polygon(0 100%,100% 61%,100% 0,0 0)
+        height: 135px
+      &:after
+        height: 75px
+    .contact_item
+      &__page
+        margin-bottom: 3px
+        .title
+          font-size: 15px
+          font-weight: 500
+          text-align: left
+          color: #9b9b9b
+      &__title
+        margin: 0 0 21px 0
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+          text-align: left
+      &__text
+        p
+          font-size: 16px
+          line-height: 1.6
+          font-weight: normal
+          text-align: left
+    .contact_info__form
+      form
+        .wpcf7-validation-errors
+          margin-bottom: 20px
+        input, textarea
+          font-weight: normal
+          font-size: 18px
+          margin-bottom: 25px
+          &::placeholder
+            font-size: 18px
+            font-weight: normal
+        input[type="submit"]
+          font-size: 13px
+          margin-bottom: 50px
+    .contact_info_text
+      width: 100%
+      &__base
+        border-bottom: 0
+        padding: 0
+        flex-direction: column
+        i
+          display: flex
+          align-items: center
+          justify-content: center
+          border-radius: 50%
+          width: 54px
+          height: 54px
+          background-color: rgba(70, 160, 255, 0.3)
+          color: #46a0ff
+          font-size: 30px
+          margin: 0 10px 5px 0
+        p
+          font-size: 13px
+          flex-direction: column
+          a
+            font-size: 13px
+      &__email
+        border-bottom: 0
+        padding: 0
+        p
+          flex-direction: column
+          font-size: 13px
+          i
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+            width: 54px
+            height: 54px
+            background-color: rgba(70, 160, 255, 0.3)
+            color: #46a0ff
+            font-size: 30px
+            margin: 0 0 5px 0
+        ul
+          padding: 0
+          text-align: center
+          li
+            a
+              font-size: 13px
+    .contact_header__img
+      display: none
+
+    // Home
+
+    .home_header
+      margin-top: -104px
+      padding: 150px 0 40px 0
+      background-color: #fff
+      &:before
+        clip-path: polygon(0 100%,100% 61%,100% 0,0 0)
+        height: 135px
+      &:after
+        display: none
+    .home_header_item
+      &:nth-child(2)
+        display: none
+      &__page
+        margin-bottom: 3px
+        .title
+          font-size: 15px
+          font-weight: 500
+      &__title
+        width: 270px
+        margin-bottom: 24px
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        p
+          font-size: 16px
+          line-height: 1.6
+          font-weight: normal
+    .ui.modal
+      .content
+        padding: 20px 30px!important
+    .home_video
+      padding: 0 0 20px 0
+      &__item a i
+        border: 4px solid #46a0ff
+        font-size: 14px
+        width: 45px
+        height: 45px
+      &__title
+        .title
+          font-size: 30px
+          text-align: left
+          font-weight: 600
+          line-height: 1.3
+    .home_wallet
+      padding: 20px 0 0 0
+      .container
+        padding: 0
+      &:before
+        top: 0
+        clip-path: polygon(0 100%,100% 0,100% 0,0 0)
+        height: 75px
+        background-color: #fff
+      &:after
+        position: absolute
+        content: ''
+        bottom: 0
+        clip-path: polygon(0 100%,100% 100%,100% 0,0 99%)
+        height: 75px
+        width: 100%
+        background-color: #fff
+    .home_wallet_item
+      &:first-child
+        width: 250px
+        max-width: 100%
+      &:nth-child(2)
+        width: 255px
+        max-width: 100%
+        position: absolute
+        right: -60px
+        top: -80px
+        transform: rotate(10deg)
+      .title
+        font-size: 30px
+        font-weight: 600
+        margin-bottom: 24px
+        line-height: 1.3
+      p
+        font-size: 16px
+        line-height: 1.6
+        font-weight: normal
+        margin-bottom: 40px
+      a
+        font-size: 13px
+        height: 34px
+        min-width: 155px
+    .home_slider
+      padding: 80px 0 50px 0
+      .swiper-slide
+        width: 100%
+        padding: 0 0 0 15px
+        opacity: 0
+      .swiper-slide-active
+        opacity: 1
+      .swiper-pagination-bullet
+        border: 1px solid #ddd
+    .home_blog
+      padding: 40px 0
+      &:before
+        display: none
+      &__title
+        margin-bottom: 30px
+        .title
+          font-size: 15px
+    .blog_item
+      width: 340px
+      margin: 0 auto 30px auto
+    .blog_item_info
+      padding: 0 24px 15px 24px
+      &__date
+        font-size: 14px
+      &__text
+        p
+          font-size: 16px
+          line-height: 1.6
+    .home_add
+      background-image: url("../img/bg_home_add.png") !important
+      padding: 40px 0 50px 0
+      &__bg
+        display: none
+      &__title
+        margin-bottom: 18px
+        .title
+          font-size: 30px
+          line-height: 1.3
+      &__text
+        width: 281px
+        max-width: 100%
+        margin: 0 auto 46px auto
+        p
+          font-size: 16px
+          font-weight: 600
+          line-height: 1.6
+      &__btn
+        a
+          font-size: 13px
+          min-width: 155px
+          height: 34px
+    // Smart
+
+    .smart_header
+      margin-top: -104px
+      padding: 150px 0 80px 0
+      &:before
+        clip-path: polygon(0 100%,100% 61%,100% 0,0 0)
+        height: 135px
+      &:after
+        height: 75px
+    .smart_header_item
+      &:nth-child(2)
+        top: 0
+      &__page
+        margin-bottom: 3px
+        .title
+          font-size: 15px
+          font-weight: 500
+      &__title
+        width: 255px
+        margin-bottom: 24px
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        p
+          font-size: 16px
+          line-height: 1.6
+          font-weight: normal
+      &__btn
+        a
+          min-width: 155px
+          height: 34px
+          font-size: 13px
+
+    .smart_advantage
+      margin-top: 0
+      padding: 30px 0 20px 0
+      .four_items__title .title
+        color: #4a4a4a
+      .four_items_item__icon
+        background-color: rgba(15, 202, 121, 0.3)
+      .four_items_item .title
+        color: #0fca79
+    .smart_how
+      padding: 40px 0
+      &:before
+        height: 195px
+      &__wrapper
+        flex-wrap: wrap
+    .smart_how_item
+      &:nth-child(2)
+        width: 315px
+        margin: 0 auto
+      &__title
+        margin-bottom: 24px
+        .title
+          text-align: center
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        text-align: center
+        margin-bottom: 40px
+        p
+          font-size: 16px
+          font-weight: 600
+          line-height: 1.6
+      &__btn
+        display: none
+        text-align: center
+        width: 100%
+        a
+          min-width: 155px
+          height: 34px
+          color: #0fca79
+          font-size: 13px
+          background-color: #fff
+    .smart_advantage .four_items_item__icon img
+      width: 30px
+    .smart_how_list
+      &__icon
+        padding-left: 12px
+      &__text
+        width: 230px
+        max-width: 100%
+        p
+          font-size: 16px
+          font-weight: 600
+          line-height: 1.6
+    .smart_token
+      padding: 40px 0
+      &__title
+        margin-bottom: 24px
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        p
+          font-size: 16px
+          font-weight: 600
+          line-height: 1.6
+      &__img
+        display: none
+    .smart_design
+      padding: 40px 0
+      &__info
+        flex-wrap: wrap
+        margin-bottom: 30px
+        .title
+          width: 100%
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+          margin-bottom: 24px
+          text-align: left
+        p
+          width: 318px
+          max-width: 100%
+          font-size: 16px
+          line-height: 1.6
+          font-weight: 600
+    .smart_design_item
+      margin-bottom: 30px
+      &__icon
+        &:before
+          display: none
+      &__text
+        padding: 15px 23px 32px 17px
+        .title
+          margin-bottom: 8px
+        p
+          font-size: 16px
+          font-weight: 600
+          line-height: 1.6
+    .smart_add
+      background-image: url("../img/bg_smart_add.png") !important
+      padding: 40px 0
+      &__bg
+        display: none
+      &__title
+        margin-bottom: 24px
+        .title
+          font-size: 30px
+          line-height: 1.3
+      &__text
+        width: 280px
+        max-width: 100%
+        margin: 0 auto 40px auto
+        p
+          font-size: 16px
+          font-weight: 600
+          line-height: 1.6
+      &__btn
+        a
+          min-width: 155px
+          height: 34px
+          font-size: 13px
+    // Protocol
+
+    .protocol_header
+      margin-top: -104px
+      padding: 150px 0 80px 0
+      &:before
+        clip-path: polygon(0 100%,100% 61%,100% 0,0 0)
+        height: 135px
+      &:after
+        height: 75px
+    .protocol_header_item
+      &__page
+        margin-bottom: 3px
+        .title
+          font-size: 15px
+          font-weight: 500
+      &__title
+        width: 360px
+        margin-bottom: 24px
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        p
+          font-size: 16px
+          line-height: 1.6
+          font-weight: normal
+      &__btn
+        a
+          min-width: 155px
+          height: 34px
+          font-size: 13px
+    .protocol_chain
+      &__wrapper
+        flex-wrap: wrap
+        .title
+          width: 330px
+          max-width: 100%
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+          margin-bottom: 24px
+          text-align: left
+        p
+          font-size: 16px
+          font-weight: 600
+          line-height: 1.6
+    .protocol_source
+      padding-bottom: 20px
+      &__wrapper
+        clip-path: polygon(0 100%,100% 90%,100% 0,0 10%)
+        flex-wrap: wrap
+      &__btn
+        a
+          min-width: 155px
+          height: 34px
+          font-size: 13px
+    .protocol_source
+      &__img
+        height: auto
+        background-color: #fff
+        min-height: 265px
+        width: 100%
+        order: 2
+        position: relative
+        margin-top: -90px
+        img
+          top: 0
+          position: absolute
+          width: 160px
+          z-index: 1
+      &__info
+        width: 100%
+        height: auto
+        padding: 115px 15px
+        order: 1
+        clip-path: polygon(0 100%,100% 85%,100% 0,0 0)
+        .title
+          text-align: center
+          font-size: 30px
+          line-height: 1.3
+          width: 330px
+          max-width: 100%
+          margin: 0 auto 24px auto
+        p
+          font-size: 16px
+          line-height: 1.6
+    .protocol_innovation
+      padding: 20px 0 0 0
+      &__title
+        margin-bottom: 24px
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+          text-align: left
+      &__text
+        margin-bottom: 5px
+        p
+          text-align: left
+          font-size: 16px
+          line-height: 1.6
+      &__bottom
+        width: 100%
+        background-color: #ffba00
+        position: relative
+        padding: 110px 15px 50px 15px
+        &:before
+          position: absolute
+          content: ''
+          width: 100%
+          height: 85px
+          top: -1px
+          left: 0
+          background-color: #fff
+          clip-path: polygon(0 100%,100% 5%,100% 0,0 0)
+      &__btn
+        a
+          min-width: 180px
+          height: 34px
+          font-size: 13px
+          color: #4a4a4a
+          background-color: #fff
+      &__formule
+        font-size: 16px
+        color: #fff
+    .protocol_formule
+      img
+        width: 336px
+      &__price
+        width: 70px
+      &__division
+        margin: 38px 0 0 10px
+        width: 100%
+        span
+          border-color: #fff
+    .protocol_community
+      position: relative
+      padding: 0 0 55px 0
+      background-position: right
+      .container
+        position: initial
+        .swiper-button-next,
+        .swiper-button-prev
+          top: 43px
+          outline: 0
+          img
+            width: 20px
+        .swiper-button-next
+          right: 10px
+        .swiper-button-prev
+          left: 10px
+      &__title
+        margin-bottom: 48px
+        padding: 26px 0
+        border-bottom: 0
+        .container
+          width: 80%
+        .title
+          font-size: 15px
+          font-weight: 700
+          text-align: center
+          color: #fff
+    .protocol_slider
+      position: inherit
+      width: 100%
+      &__item
+        text-align: left
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+          margin-bottom: 24px
+        p
+          font-size: 16px
+          line-height: 1.6
+          margin-bottom: 40px
+        a
+          min-width: 155px
+          height: 34px
+          font-size: 13px
+    .foundation_innovation__list
+      width: 100%
+    .foundation_header
+      margin-top: -104px
+      padding: 150px 0 230px 0
+      background-color: #f5f5fa
+    .foundation_header_item
+      width: 50%
+      &__page
+        margin-bottom: 3px
+        .title
+          font-size: 15px
+          font-weight: 500
+      &__title
+        width: 200px
+        margin-bottom: 24px
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        width: 265px
+        p
+          font-size: 16px
+          font-weight: normal
+          line-height: 1.6
+    .foundation_innovation
+      background-color: #f5f5fa
+      padding: 0 0 100px 0
+      position: relative
+      &:after
+        position: absolute
+        content: ''
+        bottom: -1px
+        clip-path: polygon(0 100%,100% 100%,100% 0,0 99%)
+        background-color: #fff
+        width: 100%
+        height: 85px
+        z-index: 0
+      &__title
+        margin-bottom: 24px
+        .title
+          text-align: left
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        p
+          text-align: left
+          font-size: 16px
+          line-height: 1.6
+      &__phrase
+        margin-bottom: 50px
+        p
+          font-size: 17px
+          font-weight: 700
+          background-color: inherit
+          text-align: center
+          border-bottom: solid 0.7px #4a4a4a
+          padding: 0 0 5px 0
+        span
+          display: none
+    .foundation_innovation_item
+      img
+        margin-bottom: 10px
+        width: 54px
+        height: 54px
+        background-color: rgba(109, 109, 246, 0.3)
+        border-radius: 50px
+      .title
+        font-size: 18px
+        font-weight: 600
+    .foundation_mission
+      padding: 40px 0
+      background-color: #fff
+      #lottie
+        margin: 0 auto
+    .foundation_mission_item
+      &__title
+        margin-bottom: 4px
+        .title
+          font-size: 18px
+          font-weight: 500
+      &__undertitle
+        margin-bottom: 24px
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        margin-bottom: 24px
+        p
+          font-size: 16px
+          font-weight: 500
+          line-height: 1.6
+    .foundation_slider
+      .swiper-button-next,
+      .swiper-button-prev
+        width: 20px
+    .foundation_list
+      background-color: #6d6df6
+      position: relative
+      padding: 150px 0 10px 0
+      &:before
+        position: absolute
+        content: ''
+        top: -1px
+        clip-path: polygon(0 100%,100% 0,100% 0,0 0)
+        background-color: #fff
+        width: 100%
+        height: 85px
+        z-index: 0
+    .foundation_list_item
+      margin-bottom: 30px
+      &__title
+        padding-bottom: 6px
+        border-bottom: 1px solid #fff
+        margin-bottom: 15px
+        display: block
+        text-align: left
+        .title
+          font-size: 16px
+          font-weight: 800
+          color: #fff
+          background-color: inherit
+          padding-right: 0
+          width: 100%
+        span
+          display: none
+        a
+          display: none
+      &__text
+        display: block
+        text-align: left
+        padding: 0
+        p
+          font-size: 16px
+          font-weight: 600
+          line-height: 1.6
+          color: #fff
+          text-align: left
+    .foundation_legacy
+      padding: 40px 0
+    .foundation_legacy
+      &__title
+        margin-bottom: 33px
+        .title
+          font-size: 15px
+      &__article
+        img
+          margin-bottom: 40px
+        p
+          font-size: 16px
+          font-weight: normal
+          margin-bottom: 40px
+          line-height: 1.6
+        a
+          font-size: 13px
+          height: 34px
+    .foundation_president
+      padding: 40px 0
+      &__title
+        margin-bottom: 24px
+        .title
+          font-size: 15px
+    .foundation_president_wrap
+      &__item
+        &:first-child
+          margin: 0 auto 40px auto
+        p
+          font-size: 13px
+          text-align: left
+          text-indent: -7px
+          margin-bottom: 23px
+        .title
+          width: 215px
+          padding-top: 10px
+          border-top: solid 0.7px #737373
+          font-size: 15px
+          font-weight: 500
+          font-style: italic
+          text-align: left
+          text-transform: inherit
+
+    // Careers
+
+    .careers_header_item
+      &__page
+        margin-bottom: 3px
+        .title
+          font-size: 15px
+      &__title
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+
+    .careers_list__titles
+      display: none
+
+    .careers_list .comeet-g-r
+      padding: 40px 0
+      flex-direction: column
+      border-bottom: solid 1px #cccccc
+    .careers_list .comeet-u-1-2
+      &:first-child
+        width: 100%
+        margin-bottom: 30px
+      &:nth-child(2)
+        width: 100%
+
+    .careers_list .comeet-group-name a
+      font-size: 18px
+      font-weight: 600
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.11
+      letter-spacing: 0.6px
+      color: #9b9b9b
+
+    .single_department
+      padding: 40px 0
+      flex-wrap: wrap
+      .comeet-group-name
+        width: 100%
+        margin: 0 0 30px 0
+        font-size: 18px
+        font-weight: 600
+        font-style: normal
+        font-stretch: normal
+        line-height: 1.11
+        letter-spacing: 0.6px
+        color: #9b9b9b
+      .comeet-g-r
+        padding: 0
+      .comeet-groups-list
+        width: 100%
+    .single_department .comeet-g-r .comeet-u-1-2 .comeet-list
+      .comeet-position-name
+        width: 85% !important
+        font-size: 16px
+        margin-bottom: 5px
+      .comeet-position-meta
+        width: 15% !important
+        font-size: 16px!important
+
+    .comeet-position
+      .comeet-position-name
+        width: 85%
+        font-size: 16px
+        margin-bottom: 5px
+      .comeet-position-meta
+        width: 15%
+        font-size: 16px!important
+
+    .careers_header
+      background-position: top
+      background-size: contain
+      background-image: url("../img/bg_careers_mob.png") !important
+      padding: 140px 0 225px 0
+    .careers_list
+      padding: 0
+      margin-top: -75px
+
+    .careers_list_item
+      flex-wrap: wrap
+      padding: 40px 0
+      border-color: #cccccc
+      &:hover
+        .careers_list_item__arrow
+          right: 10px
+      &:first-child
+        padding-top: 0
+      &:last-child
+        border-bottom: solid 0.8px #cccccc
+      &__department,
+      &__position
+        width: 100%
+        .title
+          font-size: 15px
+          font-weight: 500
+          font-style: normal
+          font-stretch: normal
+          line-height: 1.6
+          letter-spacing: 3.8px
+          color: #46a0ff
+          text-transform: uppercase
+          margin-bottom: 6px
+      &__department
+        margin-bottom: 20px
+        p
+          font-weight: 600
+          line-height: 1.6
+      &__position
+        p
+          font-size: 16px
+          font-weight: normal
+      &__arrow
+        bottom: 20px
+        right: 20px
+    .careers_single
+      margin-top: -75px
+      padding-top: 0
+    .careers_description
+      &__title
+        border-bottom: 0
+        .title
+          font-size: 15px
+          font-weight: 500
+          span
+            font-weight: 800
+      &__text
+        padding-bottom: 20px
+        p, li
+          font-size: 16px
+          line-height: 1.6
+          b
+            color: #46a0ff
+            text-transform: uppercase
+      &__btns
+        a
+          min-width: 155px
+          width: 155px
+          height: 34px
+          font-size: 13px
+          padding: 0
+          margin-right: 10px
+
+    // Default
+
+    .default_header
+      margin-top: -104px
+      padding: 170px 0 80px 0
+      &:before
+        clip-path: polygon(0 100%,100% 61%,100% 0,0 0)
+        height: 135px
+      &:after
+        height: 75px
+      &_item__title
+        .title
+          font-size: 30px
+          font-weight: 600
+    .default_content
+      padding-top: 50px
+      &__item
+        p
+          font-size: 16px
+          line-height: 1.6
+
+    // Error 404
+
+    .error_header
+      margin-top: -104px
+      padding: 150px 0 80px 0
+      &:before
+        clip-path: polygon(0 100%,100% 61%,100% 0,0 0)
+        height: 135px
+      &:after
+        height: 75px
+    .error_header_item
+      &__page
+        margin-bottom: 3px
+        .title
+          font-size: 15px
+          font-weight: 500
+          text-align: left
+          color: #9b9b9b
+      &__title
+        width: 200px
+        max-width: 100%
+        margin: 0 0 21px 0
+        .title
+          font-size: 30px
+          font-weight: 600
+          text-align: left
+      &__text
+        width: 275px
+        max-width: 100%
+        p, p b
+          font-size: 16px
+          font-weight: normal
+          text-align: left
+          line-height: 1.63
+      &__btn
+        text-align: left
+        a
+          font-size: 13px
+          height: 34px
+          min-width: 155px
+    // Press
+
+    .press_header
+      padding: 150px 0 130px 0
+      margin-top: -104px
+      &:before
+        position: absolute
+        content: ''
+        top: 0
+        width: 100%
+        height: 135px
+        background-color: #4fd59c
+        clip-path: polygon(0% 100%,100% 61%,100% 0%,0% 0%)
+      &:after
+        height: 85px
+      &__img
+        width: 60%
+        position: absolute
+        z-index: 1
+        left: initial
+        right: -15%
+        top: 260px
+    .press_header_item
+      &__page
+        margin-bottom: 3px
+        .title
+          color: #fff
+          font-size: 15px
+          text-align: left
+      &__title
+        margin-bottom: 40px
+        .title
+          text-align: left
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        margin-bottom: 40px
+        p
+          text-align: left
+          color: #9b9b9b
+          font-size: 16px
+          line-height: 1.6
+      &__btn
+        flex-direction: column
+        a
+          margin-bottom: 25px
+          min-width: 155px
+          width: 155px
+          height: 34px
+          font-size: 13px
+          padding: 0
+    .press_category
+      &__name
+        margin-bottom: 35px
+        .title
+          font-size: 15px
+          font-weight: 500
+          line-height: 1.6
+    .press_categories
+      background-color: #fff
+      padding-top: 20px
+    .wallet_hundreds__img
+      width: 2000px
+
+    // Bancorx
+
+    .bancorx_header
+      margin-top: -104px
+      padding: 150px 0 80px 0
+      &:before
+        clip-path: polygon(0 100%,100% 61%,100% 0,0 0)
+        height: 135px
+      &:after
+        height: 75px
+    .bancorx_item
+      &__page
+        margin-bottom: 3px
+        .title
+          font-size: 15px
+          font-weight: 500
+      &__title
+        width: 360px
+        margin-bottom: 24px
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__text
+        p
+          font-size: 16px
+          line-height: 1.6
+          font-weight: normal
+      &__btn
+        a
+          min-width: 155px
+          height: 34px
+          font-size: 13px
+    .bancorx_started
+      &__title
+        margin-bottom: 43px
+      .title
+        font-size: 30px
+        font-weight: 600
+        line-height: 1.3
+      &__wrapper
+        flex-wrap: wrap
+    .bancorx_started_item
+      margin: 0 auto 50px auto
+      &__icon
+        margin-bottom: 15px
+      &__title
+        margin-bottom: 10px
+        .title
+          font-size: 18px
+          font-weight: 600
+          letter-spacing: 0.7px
+      &__text
+        margin-bottom: 20px
+        text-align: left
+        p
+          font-size: 16px
+          font-weight: 500
+          line-height: 1.63
+          letter-spacing: -0.1px
+      &__btn
+        a
+          font-size: 13px
+          height: 34px
+          min-width: 155px
+    .bancorx_network
+      margin: 0
+      padding: 100px 0 40px 0
+      &:before
+        height: 85px
+        clip-path: polygon(0 100%,100% 0,100% 0,0 0)
+        background-color: #fff
+        bottom: initial
+        top: 0
+      &__title
+        text-align: left
+      .four_items_item__icon
+        background-color: rgba(255, 255, 255, 0)
+      .four_items_item__info
+        .title
+          color: #737373
+    .bancorx_roadmap
+      padding: 40px 0
+      &__title
+        margin-bottom: 50px
+        .title
+          font-size: 30px
+          font-weight: 600
+          line-height: 1.3
+      &__wrapper
+        flex-direction: column
+    .bancorx_roadmap_wrap
+      width: 300px
+      max-width: 100%
+      margin: 0 auto
+      .line
+        position: absolute
+        content: ''
+        height: 100%
+        left: 30px
+        top: 10px
+        width: 4px
+        background-color: #3a80cb
+        &:before
+          height: 0
+          width: 4px
+      .white_line
+        &:before
+          transition: 2s
+          height: 120px
+      &__item
+        width: 300px
+        max-width: 100%
+        margin: 0 auto 70px auto
+        display: flex
+        align-items: center
+        &:last-child
+          margin-bottom: 0
+        span
+          width: 32px
+          margin-right: 20px
+        p
+          text-align: left
+
+  // break max-1024
+  @media only screen and (min-width: $r-768 + 1) and (max-width: $r-1024)
+    .header_wrap
+      &__btn a
+        font-size: 12px
+      &__nav
+        ul
+          li
+            margin: 0 5px
+            a
+              font-size: 11px
+    .network_numbers__item p
+      font-size: 30px
+    .four_items_item__info
+      width: 85%
+    .wallet_simple .four_items_item__info
+      width: 85%
+    .contact_info
+      &__form,
+      &__text
+        margin: 0 auto 30px auto
+    .contact_header__img
+      display: none
+    .smart_how_item
+      &:first-child
+        width: 45%
+      &:nth-child(2)
+        width: 50%
+    .smart_design__info
+      .title
+        width: 45%
+      p
+        width: 50%
+    .smart_design_item
+      margin: 0 auto 95px auto
+    .careers_list__titles
+      padding-left: 20px
+      padding-right: 20px
+      .title
+        width: 30%
+    .careers_list_item
+      padding-left: 20px
+      padding-right: 20px
+      &__department,
+      &__position,
+      &__location
+        width: 30%
+
+  // break max-1200
+  @media only screen and (min-width: $r-768 + 1) and (max-width: $r-1200)
+    .container
+      padding: 0 15px
+    .four_items
+      background-position: top
+    .fundamentals_item
+      margin: 0 auto 30px auto
+    .wallet_header_wrap__item:nth-child(2)
+      width: 50%
+      right: -70px
+      margin-top: 0
+    .header_wrap__logo img
+      width: 100px
+    .wallet_crypto__img
+      width: 50%
+      top: 50%
+    .press_header__img 
+      position: absolute
+      right: 0
+      top: inherit
+      bottom: 110px
+      width: 30%
+    .blog_item_full
+      display: block
+      width: 268px
+      .blog_item__img
+        height: 190px
+      .blog_item_info
+        padding-top: 0
+        display: block
+        &__date
+          margin-bottom: 9px
+        &__text
+          p
+            font-size: 14px
+            font-weight: 500
+            font-style: normal
+            font-stretch: normal
+            line-height: 1.21
+            letter-spacing: 0.5px
+            color: #999999
+    .wallet_crypto_item
+      &:first-child,
+      &:nth-child(2)
+        width: 50%
+    .convert_slider_item
+      width: 25%
+    .home_header_item:nth-child(2)
+      width: 45%
+      top: 0
+
+  // break max-1400
+  @media only screen and (min-width: $r-1400)
+    .four_items__bg
+      top: -50px
+
+  // break max-1920
+  @media only screen and (min-width: $r-1800)
+    .four_items__bg
+      top: -150px
+
+  

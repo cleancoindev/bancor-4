@@ -1,0 +1,166 @@
+// Footer
+
+.footer
+  position: relative
+  background-color: #fff
+  padding: 123px 0 150px 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.footer_item
+  &:first-child
+    width: 580px
+    max-width: 100%
+  &:nth-child(2)
+    width: 440px
+    max-width: 100%
+    padding-top: 42px
+  &__text
+    margin-bottom: 22px
+    p
+      font-size: 20px
+      font-weight: 400
+      line-height: 1.2
+      color: #4a4a4a
+  form
+    margin-bottom: 26px
+    p
+      display: flex
+      flex-wrap: wrap
+    input
+      outline: 0
+    input[type="email"]
+      width: 334px
+      max-width: 100%
+      height: 56px
+      border-radius: 6px
+      background-color: #ffffff
+      border: solid 1px #979797
+      padding-left: 11px
+      font-size: 14px
+      font-weight: 500
+      line-height: 1.71
+      color: #9b9b9b
+      margin-right: 7px
+      font-family: 'Raleway', sans-serif
+      &::placeholder
+        font-size: 14px
+        font-weight: 500
+        line-height: 1.71
+        color: #9b9b9b
+        font-family: 'Raleway', sans-serif
+    button
+      width: 137px
+      max-width: 100%
+      height: 55px
+      border-radius: 6px
+      background-color: #9b9b9b
+      box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.15), 0 0 8px 0 rgba(0, 0, 0, 0.12)
+      border: 0
+      cursor: pointer
+      font-size: 14px
+      font-weight: 800
+      letter-spacing: 0.6px
+      color: #ffffff
+      text-transform: uppercase
+      transition: 0.5s
+      font-family: 'Raleway', sans-serif
+      outline: 0
+      &:hover
+        transition: 0.5s
+        opacity: 0.9
+        background-color: $color_blue
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 0 8px 0 rgba(0, 0, 0, 0.12)
+  &__socials
+    .textwidget
+      display: flex
+    li
+      list-style: none
+      a
+        width: 31px
+        height: 31px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: #9f9f9f
+        border-radius: 50%
+        color: #fff
+        margin-right: 9px
+        transition: 0.5s
+        &:hover
+          transition: 0.5s
+          color: #fff
+          background-color: $color_blue
+  &__price
+    border-top: solid 1.8px #9b9b9b
+    border-bottom: solid 0.8px #9b9b9b
+    margin-bottom: 10px
+    padding: 10px 0 7px
+    font-size: 16px
+    font-family: $lato
+    font-weight: 900
+    letter-spacing: 1px
+    color: #9b9b9b
+  &__nav
+    ul
+      padding: 0 15px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      li
+        width: 33%
+        flex-wrap: wrap
+        a
+          text-align: left
+          font-size: 13px
+          font-weight: 600
+          line-height: 2.46
+          letter-spacing: 0.5px
+          color: #9b9b9b
+          transition: 0.5s
+          &:hover
+            transition: 0.5s
+            color: $color_blue
+
+.copyright
+  padding-top: 6px
+  border-top: solid 0.8px #9b9b9b
+  p
+    text-transform: uppercase
+    font-family: $lato
+    font-size: 12px
+    font-weight: 600
+    color: #9b9b9b
+    
+#return-to-top 
+  position: fixed
+  bottom: 20px
+  right: 20px
+  background: #9f9f9f
+  width: 31px
+  height: 31px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 35px
+  transition: all 0.3s ease
+  z-index: 10
+  outline: 0
+
+#return-to-top i 
+  color: #fff
+  margin: 0
+  position: relative
+  font-size: 14px
+  transition: all 0.3s ease
+
+#return-to-top:hover
+  box-shadow: 0 7px 7px 0 rgba(0,0,0,.15), 0 0 8px 0 rgba(0,0,0,.12)
+  transition: all 0.3s ease
+
+#return-to-top:hover i 
+  color: #fff
+  top: 3px
+  transition: all 0.3s ease

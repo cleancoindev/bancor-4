@@ -1,0 +1,262 @@
+// Bancorx header
+
+.bancorx_header
+  background-color: #f5f5fa
+  padding: 260px 0 125px 0
+  position: relative
+  background-image: url("../img/grid_background.png")
+  background-repeat: no-repeat
+  background-size: cover
+  .container
+    position: relative
+    z-index: 1
+  &:before
+    position: absolute
+    content: ''
+    top: 0
+    clip-path: polygon(0 100%,100% 5%,100% 0,0 0)
+    background-color: #ebebf6
+    width: 100%
+    height: 255px
+    z-index: 0
+  &:after
+    position: absolute
+    content: ''
+    bottom: -1px
+    clip-path: polygon(0 100%,100% 100%,100% 0,0 99%)
+    background-color: #fff
+    width: 100%
+    height: 245px
+    z-index: 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+
+.bancorx_item
+  &:first-child
+    width: 490px
+    max-width: 100%
+  &:nth-child(2)
+    width: 730px
+    max-width: 100%
+    position: absolute
+    right: 0
+    top: -190px
+    #lottie
+      width: 100%
+      margin: 0
+  &__page
+    margin-bottom: 15px
+    .title
+      font-size: 16px
+      font-weight: 400
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.5
+      letter-spacing: 4px
+      color: #737373
+      text-transform: uppercase
+  &__title
+    margin-bottom: 40px
+    .title
+      font-size: 45px
+      font-weight: 600
+      font-style: normal
+      font-stretch: normal
+      line-height: 50px
+      letter-spacing: 0.5px
+      color: #46a0ff
+  &__text
+    p
+      font-size: 22px
+      font-weight: 400
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.46
+      letter-spacing: 0.9px
+      color: #9b9b9b
+      margin-bottom: 30px
+
+// Bancorx started
+
+.bancorx_started
+  padding: 90px 0 80px 0
+  background-color: #fff
+  &__title
+    text-align: center
+    margin-bottom: 60px
+    .title
+      color: #4a4a4a
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    margin-bottom: 60px
+  &__text
+    text-align: center
+    width: 745px
+    max-width: 100%
+    margin: 0 auto
+    p
+      font-size: 14px
+      font-weight: 500
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.71
+      letter-spacing: normal
+      color: #9b9b9b
+
+.bancorx_started_item
+  width: 355px
+  max-width: 100%
+  text-align: center
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 115px
+    margin-bottom: 25px
+  &__title
+    margin-bottom: 8px
+    .title
+      font-size: 20px
+      font-weight: 600
+      font-style: normal
+      font-stretch: normal
+      line-height: normal
+      letter-spacing: 0.8px
+      color: #4a4a4a
+  &__text
+    margin-bottom: 20px
+    p
+      font-size: 17px
+      font-weight: 500
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.65
+      letter-spacing: normal
+      color: #9b9b9b
+  &__btn
+    a
+      min-width: 192px
+
+// Bancorx network
+
+.bancorx_network
+  padding: 80px 0 40px 0
+  background-color: #f5f5fa
+  position: relative
+  margin: 0
+  &:before
+    position: absolute
+    content: ''
+    bottom: 0
+    clip-path: polygon(0 100%,100% 100%,100% 0,0 100%)
+    background-color: #ebebf6
+    width: 100%
+    height: 245px
+    z-index: 0
+  &__title
+    width: 840px
+    max-width: 100%
+    margin: 0 auto 40px auto
+  &__text
+    width: 937px
+    max-width: 100%
+    margin: 0 auto 95px auto
+    text-align: center
+
+// Bancorx roadmap
+
+.bancorx_roadmap
+  padding: 80px 0
+  background-color: #46a0ff
+  &__title
+    text-align: center
+    margin-bottom: 80px
+    .title
+      color: #fff
+  &__wrapper
+    display: flex
+    justify-content: center
+    position: relative
+
+.bancorx_roadmap_wrap
+  .line
+    position: absolute
+    content: ''
+    height: 4px
+    top: 7px
+    width: 75%
+    background-color: #3a80cb
+    &:before
+      position: absolute
+      content: ''
+      width: 0
+      height: 100%
+      background-color: #fff
+      transition: 3s
+  .white_line
+    &:before
+      transition: 3s
+      width: 290px
+  .white
+    span
+      transition: 2s
+      background-color: #fff
+      &:before
+        transition: 2s
+        border-bottom: 8px solid #fff
+      &:after
+        transition: 2s
+        border-top: 8px solid #fff
+    p
+      transition: 2s
+      color: #fff
+  &__item
+    width: 25%
+    p
+      width: 200px
+      max-width: 100%
+      margin: 0 auto
+      font-size: 17px
+      font-weight: 500
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.65
+      letter-spacing: normal
+      text-align: center
+      color: #3a80cb
+      transition: 0.5s
+    span
+      margin: 0 auto 15px auto
+      display: block
+      width: 32px
+      height: 18px
+      background: #3a80cb
+      transition: 0.5s
+      position: relative
+      top: 0
+      &:before
+        content: ""
+        position: absolute
+        top: -8px
+        left: 0
+        width: 0
+        height: 0
+        border-left: 16px solid transparent
+        border-right: 16px solid transparent
+        border-bottom: 8px solid #3a80cb
+        transition: 0.5s
+      &:after
+        content: ""
+        position: absolute
+        bottom: -8px
+        left: 0
+        width: 0
+        height: 0
+        border-left: 16px solid transparent
+        border-right: 16px solid transparent
+        border-top: 8px solid #3a80cb
+        transition: 0.5s
+  
+    
